@@ -1,0 +1,15 @@
+Pod::Spec.new do |s|
+  s.name     = 'AFNetworkingActivityLogger'
+  s.version  = '3.0.0'
+  s.license  = 'MIT'
+  s.summary  = 'AFNetworking 2.0 Extension for Network Request Logging'
+  s.homepage = 'https://github.com/AFNetworking/AFNetworkActivityLogger'
+  s.authors  = { 'Mattt Thompson' => 'm@mattt.me' }
+  s.source   = { :git => 'https://github.com/AFNetworking/AFNetworkActivityLogger.git', :tag => '2.0.1' }
+  s.source_files = 'AFNetworkingActivityLogger.{h,m}'
+  s.requires_arc = true
+  s.ios.deployment_target = '6.0'
+  s.osx.deployment_target = '10.8'
+  
+  s.dependency 'AFNetworking', '~> 2.0'
+end
